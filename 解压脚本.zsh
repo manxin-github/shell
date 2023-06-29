@@ -21,7 +21,7 @@ formats=(
 5d000080:unlzma
 )
 #判断是否为tar
-filesion=$(file $1 | cut -d' ' -f2-)
+filesion=$(file $1 | cut -d':' -f2-)
 if  [[ "$filesion" == *tar* ]]; then
 	tar -xvf "$1"	
 #判断是否为文件
