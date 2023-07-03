@@ -17,8 +17,10 @@ formats=(
 425a6839:bunzip2:
 504b0304:unzip:
 7f454c46:7z:x
-1f8b0808:gunzip
-5d000080:unlzma
+1f8b0808:gunzip:
+5d000080:unlzma:
+1f8b0800:tar:-zxvf
+fd377a58:unxz:
 )
 #判断是否为tar
 filesion=$(file $1 | cut -d':' -f2-)
